@@ -13,7 +13,7 @@ const Service = (params) => {
         localStorage.setItem("services", JSON.stringify(itemIDs));
         
            }
-           
+
     const {title,img,desc,price,id} = params.service;
     return (
         <div className='service-style'>
@@ -22,7 +22,7 @@ const Service = (params) => {
            <p>{desc}</p>
            <h3 style={{color:'grey'}}>Price: {price} taka</h3>
            <br/><br/>
-           <button onClick={()=>goToCheckOut({id})}className="btn-style"> <span className='btn-text'><b>avail this service </b></span></button>
+           <button onClick={()=>goToCheckOut({id})}className="btn-style"> <span className='btn-text'><b>Avail This Service </b></span></button>
         </div>
     );
 };

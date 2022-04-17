@@ -39,3 +39,14 @@
     color: white;
     font-size: 20px;
 }
+
+.user-btn{
+    padding: 7px 10px;
+    margin-left: 40px;
+    color: tomato;
+    font-weight: 600;
+
+}
+.user-btn:hover{
+    background-color: white;
+}

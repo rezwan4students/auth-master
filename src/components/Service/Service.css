@@ -24,3 +24,6 @@
 .btn-text{
     color: white;
 }
+.btn-style:hover{
+    background-color: blue;
+}

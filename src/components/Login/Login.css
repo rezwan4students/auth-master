@@ -6,6 +6,8 @@
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    
 }
 
 .form-title {
@@ -36,14 +38,14 @@
 .form-submit{
     width: 415px;
     height: 55px;
-    background-color: rgba(255, 153, 0, 0.3);
+    background-color: rgba(37, 62, 137, 0.3);
     border-radius: 5px;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
 .form-submit:hover{
-    background-color: rgba(255, 153, 0, 0.5);
+    background-color: rgba(37,62,137,0.5);
 }
 
 .form-link{

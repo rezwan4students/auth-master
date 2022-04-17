@@ -37,8 +37,13 @@ const Login = () => {
 
     return (
         <div className='form-container'>
+          
             <div>
+                
                 <h2 className='form-title'>Login</h2>
+                <p>
+                   new to <span style={{color:'blue'}}>RA Immigration Consultancy?</span> <Link className='form-link' to="/signup">Create an account</Link>
+                </p>
                 <form onSubmit={handleUserSignIn}>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>
@@ -54,9 +59,7 @@ const Login = () => {
                     }
                     <input className='form-submit' type="submit" value="Login" />
                 </form>
-                <p>
-                    New to Ema-John? <Link className='form-link' to="/signup">Create an account</Link>
-                </p>
+               
             </div>
         </div>
     );

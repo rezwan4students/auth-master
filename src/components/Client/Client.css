@@ -1,0 +1,17 @@
+.client-style img {
+    border-radius: 50%;
+    width:60px;
+    margin-right: 20px;
+    
+}
+
+.client-style{
+    text-align: center;
+    width: 90%;
+    height:120px;
+  
+    background-color: rgba(241, 236, 236, 0.501);
+    padding: 20px;
+   box-shadow: 3px 4px 4px lightgray;
+    margin: 20px;
+}

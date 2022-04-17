@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import imm from '../../images/immigration-banner.jpg';
+import Client from '../Client/Client';
 import Service from '../Service/Service';
 import './Services.css';
 
 const Services = () => {
+    const [clients, setClients] = useState([]);
+    useEffect(()=>{
+        fetch('clients.json')
+        .then(res=>res.json())
+        .then(data=>setClients(data))
+    } ,[])
 
     const [services,setServices] = useState([]);
     useEffect(()=>{
@@ -36,7 +43,13 @@ const Services = () => {
             </div>
 
 
-            <h2>Clients Testimonials</h2>
+            <h2>&nbsp; &nbsp; &nbsp; &nbsp;Clients Testimonials</h2>
+           <div className="testimony-section">
+               {
+                   clients.map(client=> <Client key={client.id} client={client}></Client>)
+               }
+
+           </div>
 
 
         </div>

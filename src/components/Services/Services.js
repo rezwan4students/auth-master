@@ -34,7 +34,7 @@ const Services = () => {
                     <img src={imm} alt="immigration banner" />
                 </div>
                 <div className='banner-text'>
-                    <h2>Hi, This is<span style={{color:'orange'}}> Rezwanul Alam</span></h2>
+                    <h2>Hi, This is<span style={{color:'orange'}}> Raina Alia</span></h2>
                     <hr />
                     <h4>Your 1 stop solution provider for Immigration Consultany Needs!</h4>
                 </div>

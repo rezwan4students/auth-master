@@ -1,0 +1,16 @@
+.about-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-style img {
+    width:300px;
+    
+}
+
+.about-style p{
+    width: 50%;
+}

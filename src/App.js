@@ -20,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Services></Services>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
+        <Route path ='/services/:id' element={<Services></Services>}></Route>
                
         <Route path='/checkout' element={
           <RequireAuth>

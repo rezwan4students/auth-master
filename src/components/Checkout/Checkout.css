@@ -1,0 +1,6 @@
+.selected{
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid tomato;
+    box-shadow: 2px 3px 3px orange;
+}

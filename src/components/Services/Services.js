@@ -19,7 +19,7 @@ const Services = () => {
         .then(data =>setServices(data))
     } ,[]);
 
-    console.log(services.length);
+    
     return (
 
         <div>

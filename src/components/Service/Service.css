@@ -1,0 +1,11 @@
+.service-style{
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.service-style img{
+    height: 80px;
+    width: 100px;
+}

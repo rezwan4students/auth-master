@@ -1,0 +1,9 @@
+[
+    {"id": 1, "title": "Hourly Consultation", "desc": "Avail this service if you would like to do the filing by yourself. Only avail face to face consultation from me", "price": 5000, "img": "https://user-images.githubusercontent.com/86928229/163705944-08adc936-607a-4761-be7e-468c5bf27ef4.jpg" },
+
+    {"id": 2, "title": "Complete Filing-Skilled Immigration", "desc": "Avail this service if you are applying through the skilled immigration track and want to avail my full filing service.", "price": 100000, "img": "https://user-images.githubusercontent.com/86928229/163705948-aefa6b7d-35eb-4aaa-bdac-1503cdeae44c.jpg" },
+
+    {"id": 3, "title": "Complete Filing-Business Immigration", "desc": "This service will provide you complete filing of all documents and forms for Business Track immigration. Act accordingly if you want to avail.", "price": 130000, "img": "https://user-images.githubusercontent.com/86928229/163705949-d784cf9c-f1d6-451a-bcb0-46b049b4b23f.jpg" },
+
+    {"id": 4, "title": "Post Immigration Settlement Service", "desc": "I also offer post immigration settlement service. Airport pickup, temp housing for the first month, bankins, schooling for children, all covered under the settlement package", "price": 15000, "img": "https://user-images.githubusercontent.com/86928229/163705950-8fea54a3-2b1a-4256-a22e-e394b1535511.jpg" }
+]

@@ -1,6 +1,7 @@
 import React from 'react';
+import './Checkout.css';
 
-const Inventory = () => {
+const Checkout = () => {
     return (
         <div>
             <h2>This is Inventory</h2>
@@ -8,4 +9,4 @@ const Inventory = () => {
     );
 };
 
-export default Inventory;
+export default Checkout;

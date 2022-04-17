@@ -4,9 +4,9 @@ import useProducts from '../../hooks/useProducts';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-import './Shop.css';
+import './Services.css';
 
-const Shop = () => {
+const Services = () => {
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useState([]);
 
@@ -64,4 +64,4 @@ const Shop = () => {
     );
 };
 
-export default Shop;
+export default Services;

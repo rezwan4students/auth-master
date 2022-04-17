@@ -9,14 +9,12 @@
 }
 
 .header a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 17px;
+    
+    text-decoration: none;    
     margin-left: 36px;
+    font-weight: 400;
 }
-.header a:hover{
-    color: orange;
-}
+
 
 .titleStyle{
     color: white;
@@ -26,4 +24,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 12px;
     
+}
+
+.activated {
+    color: yellow;
+    font-size: 20px;
+    padding: 25px;
+    border-bottom: 7px solid yellow;
+    background-color: rgb(117, 117, 243);
+    
+}
+
+.not-activated{
+    color: white;
+    font-size: 20px;
 }

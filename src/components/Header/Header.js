@@ -18,7 +18,7 @@ const Header = () => {
         <nav className='header'>
             <img src={logo} alt="" height="70px" />
            <h4 className='titleStyle'>Immigration Consultancy </h4>
-            <div>
+            <div className='all-links'>
                 <NavLink className={({ isActive }) => isActive ? "activated" : "not-activated"}  to="/services">Services</NavLink>
                 
                 <NavLink className={({ isActive }) => isActive ? "activated" : "not-activated"} to="/checkout">Checkout</NavLink>

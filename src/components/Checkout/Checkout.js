@@ -1,10 +1,13 @@
 import React, { useEffect,useState } from 'react';
+
+
 import { useHistory, useParams } from 'react-router-dom'
 import Item from '../Item/Item';
 
 import './Checkout.css';
 
 const Checkout = () => {
+   
     const selected = JSON.parse(localStorage.getItem('services'));
     console.log('selected:', selected);
 

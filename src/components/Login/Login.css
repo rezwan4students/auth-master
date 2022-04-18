@@ -52,3 +52,23 @@
     color: #FF9900;
     text-decoration: none;
 }
+
+.google-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    width: 160px;
+    border-bottom:  2px solid grey;
+}
+
+.google-sign-in{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 35px;
+}
+

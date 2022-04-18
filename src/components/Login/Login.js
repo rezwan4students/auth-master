@@ -3,6 +3,9 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css';
+import pin from '../../images/pin.png';
+
+import GoogleLogin from './GoogleLogin';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -13,7 +16,9 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    
+
+
+
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -27,7 +32,7 @@ const Login = () => {
     }
 
     if (user) {
-        navigate(from, {replace: true});
+        navigate(from, { replace: true });
     }
 
     const handleUserSignIn = event => {
@@ -37,12 +42,15 @@ const Login = () => {
 
     return (
         <div className='form-container'>
-          
+
             <div>
-                
+
                 <h2 className='form-title'>Login</h2>
-                <p>
-                   new to <span style={{color:'blue'}}>RA Immigration Consultancy?</span> <Link className='form-link' to="/signup">Create an account</Link>
+                <p><img width='30px' src={pin} alt="" />
+                    new to <span style={{ color: 'blue' }}>RA Immigration Consultancy?</span> <Link className='form-link' to="/signup">Create an account</Link>
+                </p>
+                <p><img width='30px' src={pin} alt="" />
+                    forgot <span style={{ color: 'blue' }}>Password?</span> <Link className='form-link' to="/reset">Reset Password Here</Link>
                 </p>
                 <form onSubmit={handleUserSignIn}>
                     <div className="input-group">
@@ -59,7 +67,10 @@ const Login = () => {
                     }
                     <input className='form-submit' type="submit" value="Login" />
                 </form>
-               
+                
+                <GoogleLogin></GoogleLogin>
+
+
             </div>
         </div>
     );

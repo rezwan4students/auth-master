@@ -3,6 +3,7 @@ import google from '../../images/google-transparent.png';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import './GoogleLogin.css' ;
 
 const GoogleLogin = () => {
     const [
@@ -34,15 +35,15 @@ const GoogleLogin = () => {
                     <div className='line'>
 
                     </div>
-                    <h3>OR</h3>
+                    <h4>or</h4>
                     <div className='line'>
 
                     </div>
                 </div>
                 <div style={{ textAlign: "center" }}>
                     <button onClick={()=>signInWithGoogle()}><div className='google-sign-in'>
-                        <img width='50px' src={google} alt="" />
-                        <h3>Sign in with Google</h3>
+                        <img width='50px' height='40px' src={google} alt="" />
+                        <h4>Sign in with Google</h4>
                     </div>
                     </button>
                 </div>

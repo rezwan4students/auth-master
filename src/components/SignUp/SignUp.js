@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const SignUp = () => {
@@ -10,7 +10,8 @@ const SignUp = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const handleEmailBlur = event =>{
         setEmail(event.target.value);
@@ -25,27 +26,31 @@ const SignUp = () => {
     }
 
     if(user){
-        navigate('/shop');
+        navigate('/checkout');
     }
 
     const handleCreateUser = event =>{
         event.preventDefault();
         if(password !== confirmPassword){
-            setError('Your two passwords did not match');
+            setError('Passwords did not match with each other');
             return;
         }
         if(password.length <6){
-            setError('Password must be 6 characters or longer');
+            setError('Please set at least a 6 character long Password');
             return;
         }
         
         createUserWithEmailAndPassword(email, password);
+        sendEmailVerification();
     }
 
     return (
         <div className='form-container'>
             <div>
-                <h2 className='form-title'>Sign Up</h2>
+                <h2 className='form-title'>Register</h2>
+                <p>
+                    Already Have an account <br/>or Want to Sing in using Google? <Link className='form-link' to="/login">Login Here</Link>
+                </p>
                 <form onSubmit={handleCreateUser}>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>
@@ -60,11 +65,9 @@ const SignUp = () => {
                         <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" />
                     </div>
                     <p style={{color: 'red'}}>{error}</p>
-                    <input className='form-submit' type="submit" value="Sign Up"  required/>
+                    <input className='form-submit' type="submit" value="Register"  required/>
                 </form>
-                <p>
-                    Already Have an account? <Link className='form-link' to="/login">Login</Link>
-                </p>
+                
             </div>
         </div>
     );

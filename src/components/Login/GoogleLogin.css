@@ -1,0 +1,21 @@
+
+.google-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 120px;
+    border-bottom:  2px solid grey;
+}
+
+.google-sign-in{
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 35px;
+}
+

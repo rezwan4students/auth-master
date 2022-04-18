@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 10px;
     
+    
 }
 
 .form-title {
@@ -18,11 +19,14 @@
 
 .input-group{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .input-group label {
     display: block;
     margin-left: 5px;
+    margin-right: 10px;
 }
 
 .input-group input {
@@ -36,13 +40,14 @@
 }
 
 .form-submit{
-    width: 415px;
+    width: 350px;
     height: 55px;
     background-color: rgba(37, 62, 137, 0.3);
     border-radius: 5px;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    margin-left:75px;
 }
 .form-submit:hover{
     background-color: rgba(37,62,137,0.5);
@@ -52,23 +57,3 @@
     color: #FF9900;
     text-decoration: none;
 }
-
-.google-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.line{
-    width: 160px;
-    border-bottom:  2px solid grey;
-}
-
-.google-sign-in{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 35px;
-}
-

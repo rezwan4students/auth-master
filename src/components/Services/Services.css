@@ -24,7 +24,13 @@
   .servicesStyle, .service-section{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
+  }
+
+  .servicesStyle img{
+    width: 400px;
+    overflow-x: hidden;
   }
 }
 

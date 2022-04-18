@@ -56,9 +56,10 @@
     .header{
         display: flex;
         flex-direction: column;
-        height: 400px;
+        align-items: center;
+        justify-content:center ;
+        height: 380px;
     }
-
     .header nav{
         display: flex;
         flex-direction: column;

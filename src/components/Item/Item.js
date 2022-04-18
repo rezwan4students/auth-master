@@ -1,11 +1,14 @@
 import React from 'react';
+import './Item.css';
 
-const Item = (params) => {
-    const {id, title, price, desc} = params.s;
+const Item = (props) => {
+    const{id,title, desc, price, img} = props.selected;
     return (
-        <div>
-            <p> ID: {id}</p>
-            <p> Item: {title}</p>
+        <div className='item-style'>
+          <h4> Service Title: <span style={{color:'red'}}>{title}</span></h4>
+          <p>Service ID: {id}</p>
+          <p> {desc}</p>
+          <p>Price: {price} taka</p>
         </div>
     );
 };

@@ -31,7 +31,7 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
            <Checkout></Checkout>
-          </RequireAuth>
+           </RequireAuth>
         }></Route>
        
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
